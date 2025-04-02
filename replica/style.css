@@ -20,6 +20,8 @@ h1 {
 
 .main-img {
   float: right;
+  width: auto;
+  height: 300px;
 }
 
 /*  IMAGE GALLERY  */
