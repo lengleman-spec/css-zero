@@ -25,3 +25,12 @@ h1 {
 }
 
 /*  IMAGE GALLERY  */
+
+.img-gallery {
+  display: grid;
+}
+
+.img-gallery img {
+  height: 200px;
+  width: auto;
+}
