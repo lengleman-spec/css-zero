@@ -7,9 +7,6 @@
   --light-orange: rgb(255, 227, 191);
 }
 
-body {
-  background-color: var(--dark-blue);
-}
 /*  < - - - ALL MY ORIGINAL CODE   - - - >
 body {
   background-color: #d9e0ff;
