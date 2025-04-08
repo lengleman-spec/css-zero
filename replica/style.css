@@ -1,9 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 
-/*  MAIN BODY  */
+:root {
+  --dark-blue: rgb(70, 137, 244);
+  --light-blue: rgb(186, 212, 255);
+  --bold-orange: rgb(229, 158, 66);
+  --light-orange: rgb(255, 227, 191);
+}
+
+body {
+  background-color: var(--dark-blue);
+}
+/*  < - - - ALL MY ORIGINAL CODE   - - - >
 body {
   background-color: #d9e0ff;
   font-family: "Titillium Web", monospace;
+  display: flex;
 }
 
 h1 {
@@ -17,15 +28,20 @@ h1 {
   height: 300px;
 }
 
-/*  IMAGE GALLERY  */
-
 .img-gallery {
   display: grid;
   gap: 1.5rem;
   grid-template-columns: 1fr 1fr;
+  margin-left: 75px;
 }
 
 .img-gallery img {
   height: 300px;
   width: 500px;
 }
+
+.sidebar {
+  position: absolute;
+  right: 0;
+}
+*/
