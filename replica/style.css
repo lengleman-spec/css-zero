@@ -30,8 +30,15 @@ body {
   background-color: var(--light-blue);
 }
 
+.content {
+  animation-name: fade-in;
+  animation-duration: 2s;
+}
+
 .sidebar {
   background-color: var(--light-orange);
+  animation-name: fade-in;
+  animation-duration: 2s;
 }
 
 /* we're using flexbox to create the image-grid */
@@ -77,6 +84,15 @@ body {
 
 .post > a:hover {
   color: var(--light-blue);
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* ________________________________________
