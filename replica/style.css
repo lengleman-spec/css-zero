@@ -18,7 +18,26 @@ img {
   grid-gap: 50px;
 }
 
-/*  < - - - ALL MY ORIGINAL CODE   - - - >
+body {
+  font-family: "Roboto", monospace;
+}
+
+/* we're using flexbox to create the image-grid */
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* The code below selects: 
+ 'Every image inside of our image grid'
+*/
+.image-grid > img {
+  margin: 10px;
+}
+
+/* ________________________________________
+< - - - ALL MY ORIGINAL CODE   - - - >
 body {
   background-color: #d9e0ff;
   font-family: "Titillium Web", monospace;
