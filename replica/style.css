@@ -2,7 +2,7 @@
 
 :root {
   --dark-blue: rgb(70, 137, 244);
-  --light-blue: rgb(186, 212, 255);
+  --light-blue: rgba(186, 212, 255, 0.5);
   --bold-orange: rgb(229, 158, 66);
   --light-orange: rgb(255, 227, 191);
 }
@@ -20,6 +20,11 @@ img {
 
 body {
   font-family: "Roboto", monospace;
+  background-color: var(--light-blue);
+}
+
+.sidebar {
+  background-color: var(--light-orange);
 }
 
 /* we're using flexbox to create the image-grid */
@@ -34,6 +39,26 @@ body {
 */
 .image-grid > img {
   margin: 10px;
+}
+/* we're using a simple float to align the image next to the paragraphs. */
+#image-1 {
+  float: right;
+  margin: 15px;
+  height: 300px;
+}
+
+.post {
+  border: 2px solid var(--bold-orange);
+  margin: 10px;
+}
+
+.post-title {
+  margin-left: 5px;
+}
+
+.post-text {
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 /* ________________________________________
