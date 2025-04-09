@@ -10,6 +10,13 @@
 img {
   width: 400px;
   height: 200px;
+  /*  Learning Point! The transition property can be used to specify a specific property (such as height) or ALL listed properties associated with the transition (such as height and width, as seen below) by using the keyword 'all'.   */
+  transition: 0.5s all;
+}
+
+img:hover {
+  height: 250px;
+  width: 500px;
 }
 /* found my problem here - should have used grid on the entire page to start with, creating two columns, one 70% wide and the other 30%, as shown below */
 #main {
@@ -59,6 +66,17 @@ body {
 .post-text {
   margin-left: 5px;
   margin-right: 5px;
+}
+
+.post > a {
+  margin-left: 5px;
+  margin-right: 5px;
+  text-decoration: none;
+  transition: 0.5s color;
+}
+
+.post > a:hover {
+  color: var(--light-blue);
 }
 
 /* ________________________________________
